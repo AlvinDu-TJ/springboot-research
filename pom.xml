@@ -221,6 +221,9 @@
     <modules>
         <module>springboot-server</module>
         <module>springboot-orm</module>
+        <module>springboot-client</module>
+        <module>springboot-executor</module>
+        <module>springboot-client</module>
     </modules>
 
     <distributionManagement>
