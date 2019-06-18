@@ -21,11 +21,10 @@ public class ExecutorApplication {
 
         Hello h = c.getBean(Hello.class);
         for (int i = 1; i <=100; i++) {
-//            sync(h, i+"");
+            sync(h, i+"");
         }
     }
 
-    @Bean
     public CommandLineRunner buyPhone(ConsumerService service) throws Exception {
         return args -> {
             for (int i = 0; i <100; i++) {
