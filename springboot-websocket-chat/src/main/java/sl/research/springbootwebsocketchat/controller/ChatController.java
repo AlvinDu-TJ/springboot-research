@@ -13,7 +13,7 @@ import java.security.Principal;
 
 
 @Controller
-public class ChartController {
+public class ChatController {
 
     /**
      * 通过SimpMessagingTemplate向浏览器发送消息
