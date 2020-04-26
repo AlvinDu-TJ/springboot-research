@@ -224,6 +224,9 @@
         <module>springboot-orm</module>
         <module>springboot-executor</module>
         <module>springboot-websocket</module>
+        <module>springboot-websocket-chat</module>
+        <module>springboot-redis</module>
+        <module>springboot-junit</module>
     </modules>
 
     <distributionManagement>
