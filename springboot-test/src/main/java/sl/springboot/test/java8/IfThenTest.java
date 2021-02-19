@@ -32,10 +32,10 @@ public class IfThenTest {
 
 
     // 此处的map 可以理解成一个对象
-    private static void handleMap(Map p, List<IfThen> ifThens){
+    private static void handleMap(Map p, List<IfThen> ifThens) {
         Optional<Map> p1 = Optional.ofNullable(p);
         // 如果对象不为null, 并且能匹配到处理器，就用相应的处理器处理。
-        ifThens.forEach(a-> p1.filter(a.getP()).ifPresent(a.getC()));
+        ifThens.forEach(a -> p1.filter(a.getP()).ifPresent(a.getC()));
 
     }
 
