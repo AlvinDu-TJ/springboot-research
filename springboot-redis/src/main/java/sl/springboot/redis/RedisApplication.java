@@ -18,13 +18,7 @@ public class RedisApplication {
         String today = sf.format(new Date());
 
 
-        Runnable rr = new Runnable(){
-
-            @Override
-            public void run() {
-                r.incr(today, 1);
-            }
-        };
+        Runnable rr = () -> r.incr(today, 1);
 
         for(int i=0;i<100;i++){
             new Thread(rr).start();

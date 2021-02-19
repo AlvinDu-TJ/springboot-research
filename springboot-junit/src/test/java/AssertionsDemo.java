@@ -12,6 +12,10 @@ import static org.junit.jupiter.api.Assertions.assertTimeout;
 import static org.junit.jupiter.api.Assertions.assertTimeoutPreemptively;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * https://zhuanlan.zhihu.com/p/111706639
+ */
+
 public class AssertionsDemo {
 
     static Person person;

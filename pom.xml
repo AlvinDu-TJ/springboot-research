@@ -227,6 +227,7 @@
         <module>springboot-websocket-chat</module>
         <module>springboot-redis</module>
         <module>springboot-junit</module>
+        <module>springboot-test</module>
     </modules>
 
     <distributionManagement>
