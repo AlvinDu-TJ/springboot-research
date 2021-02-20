@@ -9,7 +9,7 @@
 		<groupId>sl.springboot.research</groupId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>springboot-web</artifactId>
+	<artifactId>springboot-server</artifactId>
 
     <properties>
     <start-class>sl.springboot.server.ServerApplication</start-class>
