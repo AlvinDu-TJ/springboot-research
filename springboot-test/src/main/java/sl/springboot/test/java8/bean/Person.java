@@ -1,6 +1,8 @@
 package sl.springboot.test.java8.bean;
 
 
+import com.google.common.base.Objects;
+
 public class Person {
     private String name;
     private int age;
@@ -25,5 +27,19 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return age == person.age &&
+                Objects.equal(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(name, age);
     }
 }
