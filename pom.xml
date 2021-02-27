@@ -230,23 +230,6 @@
         <module>springboot-test</module>
     </modules>
 
-    <distributionManagement>
-        <repository>
-            <id>Release</id>
-            <name>Home Credit China Releases</name>
-            <url>http://alm.homecredit.cn/nexus/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>Snapshot</id>
-            <name>Home Credit China Snapshots</name>
-            <url>http://alm.homecredit.cn/nexus/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>com.springsource.repository.bundles.release</id>
-            <name>Spring Maven Repository Repository</name>
-            <url>http://repository.springsource.com/maven/bundles/release</url>
-        </repository>
-    </repositories>
+
+
 </project>

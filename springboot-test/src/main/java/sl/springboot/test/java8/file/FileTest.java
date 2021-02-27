@@ -1,5 +1,6 @@
-package sl.springboot.test.java8.File;
+package sl.springboot.test.java8.file;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -7,6 +8,7 @@ public class FileTest {
     public static void main(String[] args)  {
         if(1== 1) {
             System.out.println("a"+System.getProperty("line.separator")+"b");
+            System.out.println("a"+ File.separator+"b");
             return;
         }
 

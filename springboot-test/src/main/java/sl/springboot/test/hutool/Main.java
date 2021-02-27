@@ -87,7 +87,7 @@ public class Main {
         BufferedOutputStream out = FileUtil.getOutputStream("d:/test2.txt");
         long copySize = IoUtil.copy(in, out, IoUtil.DEFAULT_BUFFER_SIZE);
 
-        // File 工具类
+        // file 工具类
         //默认UTF-8编码，可以在构造中传入第二个参数做为编码
         FileReader fileReader = new FileReader("test.properties");
         String result = fileReader.readString();
