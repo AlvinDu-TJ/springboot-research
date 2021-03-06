@@ -228,6 +228,8 @@
         <module>springboot-redis</module>
         <module>springboot-junit</module>
         <module>springboot-test</module>
+        <module>springboot-kafka</module>
+        <module>springboot-kafka-server</module>
     </modules>
 
 
