@@ -230,6 +230,9 @@
         <module>springboot-test</module>
         <module>springboot-kafka</module>
         <module>springboot-kafka-server</module>
+        <module>springboot-security</module>
+        <module>springboot-rabbitmq</module>
+        <module>springboot-elastic-search</module>
     </modules>
 
 

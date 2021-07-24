@@ -1,0 +1,6 @@
+spring:
+  rabbitmq:
+    host: 192.168.50.188
+    username: admin
+    password: admin
+    port: 5672

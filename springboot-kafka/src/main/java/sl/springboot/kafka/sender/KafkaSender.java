@@ -1,5 +1,6 @@
 package sl.springboot.kafka.sender;
 
+import com.google.common.base.Function;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import lombok.extern.slf4j.Slf4j;
@@ -27,6 +28,8 @@ public class KafkaSender {
         message.setMsg(UUID.randomUUID().toString());
         String format = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         message.setLocalDateTime(format);
+
+
 
         log.info("+++++++++++++++++++++  message = {}", gson.toJson(message));
         kafkaTemplate.send("hello", gson.toJson(message));
