@@ -15,8 +15,8 @@ public class CallableTest2 implements Callable<Object> {
 
     //1，2主要区别是创建线程的方式
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-//        test1();
-        test2();
+        test1();
+//        test2();
 
     }
 
@@ -38,7 +38,9 @@ public class CallableTest2 implements Callable<Object> {
             list.add(f);
         }
         // 关闭线程池
+        System.out.println("shut down start>>>>>");
         pool.shutdown();
+        System.out.println("shut down end>>>>>");
         // 获取所有并发任务的运行结果
         for (Future f : list) {
             // 从Future对象上获取任务的返回值，并输出到控制台
@@ -87,7 +89,7 @@ public class CallableTest2 implements Callable<Object> {
     public Object call() throws Exception {
         System.out.println(">>>" + taskNum + "任务启动");
         Date dateTmp1 = new Date();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         Date dateTmp2 = new Date();
         long time = dateTmp2.getTime() - dateTmp1.getTime();
         System.out.println(">>>" + taskNum + "任务终止");

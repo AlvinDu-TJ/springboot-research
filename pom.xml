@@ -235,6 +235,8 @@
         <module>springboot-elastic-search</module>
         <module>springboot-dubbo-ticket</module>
         <module>springboot-dubbo-user</module>
+        <module>springboot-apollo</module>
+        <module>springboot-mybatis-plus</module>
     </modules>
 
 

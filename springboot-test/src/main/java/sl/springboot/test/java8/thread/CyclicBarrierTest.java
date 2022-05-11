@@ -12,6 +12,7 @@ public class CyclicBarrierTest {
 
         for(int i=0;i<N;i++)
             new Writer(barrier).start();
+        System.out.println("当前线程"+Thread.currentThread().getName());
     }
     static class Writer extends Thread{
         private CyclicBarrier cyclicBarrier;

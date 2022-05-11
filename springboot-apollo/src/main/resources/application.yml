@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+app:
+  id: springboot-hello
+apollo:
+  meta: http://192.168.50.188:8080
+  cluster: default
+  bootstrap:
+    enabled: true
+    eagerLoad:
+      enabled: true
+    namespaces: application, TEST1.db
+
+logging:
+  level:
+    com:
+      gf:
+        controller: debug
