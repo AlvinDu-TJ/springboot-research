@@ -1,4 +1,4 @@
-package sl.springboot.test.java8.LinkedList;
+package sl.springboot.test.java8.linkedList;
 
 import com.google.common.collect.ImmutableMap;
 
