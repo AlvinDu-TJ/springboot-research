@@ -24,7 +24,7 @@
         <sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
         <sonar.jacoco.reportMissing.force.zero>true</sonar.jacoco.reportMissing.force.zero>
 
-        <drools.version>5.6.0.Final</drools.version>
+        <drools.version>7.69.0.Final</drools.version>
         <druid.version>1.1.10</druid.version>
     </properties>
 
